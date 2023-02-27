@@ -57,3 +57,7 @@ mergeSort(): This function divides the array into 2 parts. low to mid and mid+1 
          mergeSort(arr, mid+1, high);
          merge(arr, low, mid, high);
     }
+
+
+Time Complexity: O(nlogn)
+Space complexity: O(n)
