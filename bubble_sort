@@ -1,0 +1,21 @@
+// Repeatedly swap 2 adjacent elements if arr[j] > arr[j+1].
+// Here, the maximum element of the unsorted array reaches the end of the unsorted array after each iteration.
+// Unlike selection sort, here, sorting is done from the back.
+// After (N-1) iterations, we get a sorted array.
+
+void bubbleSort(int arr[], int n)
+    {
+        for(int i = 0 ; i < n - 1 ; i++)
+        {
+            for(int j = 0 ; j < n - i - 1; j++)
+            {
+                if(arr[j] > arr[j + 1])
+                {
+                    swap(arr[j], arr[j+1]);
+                }
+            }
+        }  
+    } 
+    
+    Time complexity: O(N2)
+    Space Complexity: O(1)
